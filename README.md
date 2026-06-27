@@ -94,7 +94,7 @@ The agent highlights things you would miss shopping on your own:
 ### 1. Clone and setup
 
 ```bash
-git clone https://github.com/sukashyar/deal-hunter.git
+git clone https://github.com/suhasvkashyap/deal-hunter.git
 cd deal-hunter
 make setup
 ```
