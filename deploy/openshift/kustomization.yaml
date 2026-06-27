@@ -1,0 +1,17 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: deal-hunter
+
+resources:
+  - namespace.yaml
+  - agent-configmap.yaml
+  - agent-secret.yaml
+  - agent-pvc.yaml
+  - agent-cronjob.yaml
+  # Uncomment when GPU nodes are available:
+  # - vllm-servingruntime.yaml
+  # - vllm-inferenceservice.yaml
+
+commonLabels:
+  app.kubernetes.io/part-of: deal-hunter

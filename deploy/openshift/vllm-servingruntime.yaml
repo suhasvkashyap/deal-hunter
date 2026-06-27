@@ -1,0 +1,41 @@
+apiVersion: serving.kserve.io/v1alpha1
+kind: ServingRuntime
+metadata:
+  name: vllm-runtime
+  namespace: deal-hunter
+  annotations:
+    openshift.io/display-name: vLLM ServingRuntime
+spec:
+  builtInAdapter:
+    modelLoadingTimeoutMillis: 90000
+  containers:
+    - name: kserve-container
+      image: quay.io/modh/vllm:rhoai-2.16
+      command:
+        - python
+        - -m
+        - vllm.entrypoints.openai.api_server
+      args:
+        - --port=8080
+        - --model=/mnt/models
+        - --served-model-name=granite-3.2-8b-instruct
+        - --max-model-len=4096
+      env:
+        - name: HF_HUB_CACHE
+          value: /tmp
+      ports:
+        - containerPort: 8080
+          protocol: TCP
+      resources:
+        limits:
+          cpu: "4"
+          memory: 24Gi
+          nvidia.com/gpu: "1"
+        requests:
+          cpu: "2"
+          memory: 16Gi
+          nvidia.com/gpu: "1"
+  multiModel: false
+  supportedModelFormats:
+    - autoSelect: true
+      name: vLLM

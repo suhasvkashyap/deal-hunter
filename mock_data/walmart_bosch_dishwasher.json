@@ -1,0 +1,32 @@
+{
+  "products": [
+    {
+      "retailer": "walmart",
+      "title": "Bosch 500 Series 24 in. Stainless Steel Top Control Tall Tub Dishwasher - SHP65CM5N",
+      "url": "https://www.walmart.com/ip/Bosch-500-Series-Dishwasher/987654321",
+      "sku": "SHP65CM5N",
+      "image_url": "https://i5.walmartimages.com/seo/example.jpg",
+      "price": 919.00,
+      "currency": "USD",
+      "in_stock": true,
+      "shipping": "Free shipping, arrives in 5-7 business days",
+      "perks": [
+        {
+          "category": "warranty",
+          "description": "1-year manufacturer warranty; extended warranty plans available",
+          "value": "1-year (3-year plan $79.00, 5-year plan $109.00)"
+        },
+        {
+          "category": "installation",
+          "description": "Installation services available through Walmart (varies by location)",
+          "value": "$139.00"
+        },
+        {
+          "category": "returns",
+          "description": "30-day return policy on major appliances",
+          "value": "30-day returns"
+        }
+      ]
+    }
+  ]
+}

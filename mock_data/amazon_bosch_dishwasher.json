@@ -1,0 +1,55 @@
+{
+  "products": [
+    {
+      "retailer": "amazon",
+      "title": "Bosch 500 Series 24\" Top Control Built-In Dishwasher - Stainless Steel - SHP65CM5N",
+      "url": "https://www.amazon.com/dp/B0B1MJNDFL",
+      "sku": "SHP65CM5N",
+      "image_url": "https://m.media-amazon.com/images/I/71example.jpg",
+      "price": 899.99,
+      "currency": "USD",
+      "in_stock": true,
+      "shipping": "Free shipping",
+      "perks": [
+        {
+          "category": "warranty",
+          "description": "1-year manufacturer warranty included",
+          "value": "Included"
+        },
+        {
+          "category": "installation",
+          "description": "Professional installation available through Amazon Home Services",
+          "value": "$154.99"
+        },
+        {
+          "category": "disposal",
+          "description": "Haul-away of old appliance available",
+          "value": "$34.99"
+        }
+      ]
+    },
+    {
+      "retailer": "amazon",
+      "title": "Bosch 300 Series 24\" Front Control Built-In Dishwasher - Stainless Steel - SHS53C75N",
+      "url": "https://www.amazon.com/dp/B0B1MJAAAA",
+      "sku": "SHS53C75N",
+      "image_url": "https://m.media-amazon.com/images/I/72example.jpg",
+      "price": 749.99,
+      "currency": "USD",
+      "in_stock": true,
+      "shipping": "Free shipping",
+      "perks": [
+        {
+          "category": "warranty",
+          "description": "1-year manufacturer warranty included",
+          "value": "Included"
+        },
+        {
+          "category": "installation",
+          "description": "Professional installation available",
+          "value": "$154.99"
+        }
+      ]
+    }
+  ]
+}

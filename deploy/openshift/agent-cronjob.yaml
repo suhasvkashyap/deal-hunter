@@ -1,0 +1,46 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: deal-hunter
+  namespace: deal-hunter
+  labels:
+    app.kubernetes.io/name: deal-hunter
+    app.kubernetes.io/part-of: deal-hunter
+spec:
+  schedule: "0 8 * * *"
+  concurrencyPolicy: Forbid
+  successfulJobsHistoryLimit: 3
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      backoffLimit: 2
+      template:
+        metadata:
+          labels:
+            app.kubernetes.io/name: deal-hunter
+        spec:
+          containers:
+            - name: deal-hunter
+              image: quay.io/rh-demos/deal-hunter:latest
+              args:
+                - "Bosch 500 series dishwasher"
+              envFrom:
+                - configMapRef:
+                    name: deal-hunter-config
+                - secretRef:
+                    name: deal-hunter-secrets
+              volumeMounts:
+                - name: reports
+                  mountPath: /app/reports
+              resources:
+                limits:
+                  cpu: "1"
+                  memory: 512Mi
+                requests:
+                  cpu: 250m
+                  memory: 256Mi
+          volumes:
+            - name: reports
+              persistentVolumeClaim:
+                claimName: deal-hunter-reports
+          restartPolicy: OnFailure

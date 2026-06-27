@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: deal-hunter-config
+  namespace: deal-hunter
+data:
+  LLM_PROVIDER: "vllm"
+  LLM_BASE_URL: "http://granite-predictor.deal-hunter.svc.cluster.local:8080/v1"
+  LLM_MODEL: "granite-3.2-8b-instruct"
+  USE_MOCK_DATA: "false"
+  OUTPUT_DIR: "/app/reports"
+  MOCK_DATA_DIR: "/app/mock_data"
+  RETAILERS: "amazon,costco,walmart,bestbuy"

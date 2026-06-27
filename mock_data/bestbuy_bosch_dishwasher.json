@@ -1,0 +1,65 @@
+{
+  "products": [
+    {
+      "retailer": "bestbuy",
+      "title": "Bosch 500 Series 24\" Top Control Smart Built-In Stainless Steel Tub Dishwasher - SHP65CM5N",
+      "url": "https://www.bestbuy.com/site/bosch-500-series-dishwasher/6543210.p",
+      "sku": "SHP65CM5N",
+      "image_url": "https://pisces.bbystatic.com/image2/example.jpg",
+      "price": 899.99,
+      "currency": "USD",
+      "in_stock": true,
+      "shipping": "Free shipping",
+      "perks": [
+        {
+          "category": "warranty",
+          "description": "1-year manufacturer warranty; Geek Squad Protection available",
+          "value": "1-year (3-year Geek Squad $129.99, 5-year $179.99)"
+        },
+        {
+          "category": "installation",
+          "description": "Free standard installation with purchase of $399+",
+          "value": "Free"
+        },
+        {
+          "category": "disposal",
+          "description": "Free haul-away of old appliance with delivery",
+          "value": "Free"
+        },
+        {
+          "category": "financing",
+          "description": "12-month financing with Best Buy credit card on purchases $799+",
+          "value": "0% APR for 12 months"
+        }
+      ]
+    },
+    {
+      "retailer": "bestbuy",
+      "title": "Bosch 300 Series 24\" Front Control Built-In Dishwasher - SHS53C75N",
+      "url": "https://www.bestbuy.com/site/bosch-300-series-dishwasher/6543211.p",
+      "sku": "SHS53C75N",
+      "image_url": "https://pisces.bbystatic.com/image2/example2.jpg",
+      "price": 749.99,
+      "currency": "USD",
+      "in_stock": false,
+      "shipping": "Backordered - estimated 2-3 weeks",
+      "perks": [
+        {
+          "category": "warranty",
+          "description": "1-year manufacturer warranty; Geek Squad Protection available",
+          "value": "1-year (3-year $99.99)"
+        },
+        {
+          "category": "installation",
+          "description": "Free standard installation with purchase of $399+",
+          "value": "Free"
+        },
+        {
+          "category": "disposal",
+          "description": "Free haul-away of old appliance with delivery",
+          "value": "Free"
+        }
+      ]
+    }
+  ]
+}

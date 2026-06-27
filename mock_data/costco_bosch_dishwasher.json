@@ -1,0 +1,75 @@
+{
+  "products": [
+    {
+      "retailer": "costco",
+      "title": "Bosch 500 Series 24\" Pocket Handle Dishwasher - Stainless Steel - SHP65CM5N",
+      "url": "https://www.costco.com/bosch-500-series-dishwasher.product.4000249873.html",
+      "sku": "SHP65CM5N",
+      "image_url": "https://richmedia.ca-richimage.com/ImageDelivery/imageService?profileId=12026540&id=example",
+      "price": 879.99,
+      "currency": "USD",
+      "in_stock": true,
+      "shipping": "Free shipping",
+      "perks": [
+        {
+          "category": "warranty",
+          "description": "Costco extends manufacturer warranty to 2 years on appliances over $499",
+          "value": "2-year warranty (extended by Costco)"
+        },
+        {
+          "category": "installation",
+          "description": "Free basic installation included with purchase",
+          "value": "Free"
+        },
+        {
+          "category": "disposal",
+          "description": "Free haul-away and disposal of existing dishwasher",
+          "value": "Free"
+        },
+        {
+          "category": "membership",
+          "description": "Requires active Costco membership",
+          "value": "Costco membership required ($65/yr)"
+        },
+        {
+          "category": "returns",
+          "description": "90-day return policy on major appliances",
+          "value": "90-day returns"
+        }
+      ]
+    },
+    {
+      "retailer": "costco",
+      "title": "Bosch 300 Series 24\" Recessed Handle Dishwasher - Stainless Steel - SHE53C85N",
+      "url": "https://www.costco.com/bosch-300-series-dishwasher.product.4000249874.html",
+      "sku": "SHE53C85N",
+      "image_url": "https://richmedia.ca-richimage.com/ImageDelivery/imageService?profileId=12026540&id=example2",
+      "price": 729.99,
+      "currency": "USD",
+      "in_stock": true,
+      "shipping": "Free shipping",
+      "perks": [
+        {
+          "category": "warranty",
+          "description": "Costco extends manufacturer warranty to 2 years",
+          "value": "2-year warranty (extended by Costco)"
+        },
+        {
+          "category": "installation",
+          "description": "Free basic installation included",
+          "value": "Free"
+        },
+        {
+          "category": "disposal",
+          "description": "Free haul-away of old dishwasher",
+          "value": "Free"
+        },
+        {
+          "category": "membership",
+          "description": "Requires active Costco membership",
+          "value": "Costco membership required ($65/yr)"
+        }
+      ]
+    }
+  ]
+}
